@@ -9,8 +9,7 @@ export default function Header() {
         <header className="flex justify-evenly items-center border-b-1 border-gray-200 pt-10 pb-4 " >
             <h2 className=" text-[#000000] font-inter font-bold leading-6 tracking-[3%] text-2xl " >
                 Exclusive
-            </h2>
-            
+            </h2>          
             <nav className="flex " >
                 <ul className="flex gap-[48px] " >
                     <li> <Link href="/" className=" font-poppins  " >Home</Link> </li>
@@ -27,8 +26,7 @@ export default function Header() {
                     <Container>
                         <Link href="/" >
                             <Image src={FaveIcon} />
-                        </Link>
-                        
+                        </Link>                       
                     </Container>
                     <Container>
                         <Link href="/" >
@@ -36,8 +34,7 @@ export default function Header() {
                         </Link>
                     </Container>
                 </Container>
-            </Container>
-            
+            </Container>           
         </header>
     )
 }
