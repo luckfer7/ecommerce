@@ -17,6 +17,15 @@
 .font-raleway {
   font-family: var(--raleway), sans-serif;
 }
+
+.font-inter {
+  font-family: var(--inter), sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--poppins), sans-serif;
+}
+
 /* @media () {
   :root {
     
