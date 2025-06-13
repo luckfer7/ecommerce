@@ -25,12 +25,12 @@ export default function Header() {
                 <Container className=" flex gap-4 items-center " >
                     <Container>
                         <Link href="/" >
-                            <Image src={FaveIcon} />
+                            <Image src={FaveIcon} alt="icone de favoritos" />
                         </Link>                       
                     </Container>
                     <Container>
                         <Link href="/" >
-                            <Image src={CartIcon} />
+                            <Image src={CartIcon} alt="icone de carrinho" />
                         </Link>
                     </Container>
                 </Container>
