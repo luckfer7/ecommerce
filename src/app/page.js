@@ -1,3 +1,4 @@
+import FlashSales from "@/components/FlashSales";
 import Header from "@/components/Header";
 import HomePage from "@/components/HomePage";
 import TopHeader from "@/components/TopHeader";
@@ -9,6 +10,7 @@ export default function Home() {
       <TopHeader />
       <Header />
       <HomePage />
+      <FlashSales />
     </div>
   );
 }

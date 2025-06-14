@@ -1,0 +1,51 @@
+export const products = [
+  {
+    id: 1,
+    slug: 'joystick',
+    name: 'HAVIT HV-G92 Gamepad',
+    price: 120,
+    category: 'headphones',
+    image: '/joystick.png',
+  },
+  {
+    id: 2,
+    slug: 'eletronics',
+    name: 'AK-900 Wired Keyboard',
+    price: 960,
+    category: 'eletronics',
+    image: '/keyboard.png',
+  },
+  {
+    id: 3,
+    slug: 'eletronics',
+    name: 'IPS LCD Gaming Monitor',
+    price: 370,
+    category: 'eletronics',
+    image: '/tv.png',
+  },
+  {
+    id: 4,
+    slug: 'homelifestyle',
+    name: 'S-Series Comfort Chair',
+    price: 374,
+    category: 'homelifestyle',
+    image: '/chair.png',
+  },
+  {
+    id: 5,
+    slug: 'homelifestyle',
+    name: 'S-Series Comfort Chair',
+    price: 374,
+    category: 'homelifestyle',
+    image: '/chair.png',
+  },
+  {
+    id: 6,
+    slug: 'homelifestyle',
+    name: 'S-Series Comfort Chair',
+    price: 374,
+    category: 'homelifestyle',
+    image: '/chair.png',
+  },
+  
+]
