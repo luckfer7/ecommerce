@@ -1,3 +1,4 @@
+import Categories from "@/components/Categories";
 import FlashSales from "@/components/FlashSales";
 import Header from "@/components/Header";
 import HomePage from "@/components/HomePage";
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <HomePage />
       <FlashSales />
+      <Categories />
     </div>
   );
 }
