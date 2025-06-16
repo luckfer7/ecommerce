@@ -35,7 +35,9 @@ export default function Bestselling() {
                     </CarouselContent>
                     {/* <CarouselPrevious />
                     <CarouselNext /> */}
-                </Carousel>                    
+                </Carousel>         
+
+                <div className="w-[100%] border-b border-gray-200 mx-auto"></div>           
         </section>
     )
 }
