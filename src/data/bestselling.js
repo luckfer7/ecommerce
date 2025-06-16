@@ -13,7 +13,7 @@ export const bestSellingProducts = [
         name: 'Gucci duffle bag',
         price: 960,
         category: 'woman fashion',
-        image: '/coat.png',
+        image: '/bag.png',
     },
     {
         id: 3,
