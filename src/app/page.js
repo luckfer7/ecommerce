@@ -1,3 +1,4 @@
+import Bestselling from "@/components/BestSelling";
 import Categories from "@/components/Categories";
 import FlashSales from "@/components/FlashSales";
 import Header from "@/components/Header";
@@ -13,6 +14,7 @@ export default function Home() {
       <HomePage />
       <FlashSales />
       <Categories />
+      <Bestselling />
     </div>
   );
 }
