@@ -3,6 +3,7 @@ import Categories from "@/components/Categories";
 import FlashSales from "@/components/FlashSales";
 import Header from "@/components/Header";
 import HomePage from "@/components/HomePage";
+import OurProducts from "@/components/OurProducts";
 import Promotion from "@/components/Promotion";
 import TopHeader from "@/components/TopHeader";
 import Image from "next/image";
@@ -17,6 +18,7 @@ export default function Home() {
       <Categories />
       <Bestselling />
       <Promotion />
+      <OurProducts />
     </div>
   );
 }

@@ -48,4 +48,5 @@ export const products = [
     image: '/chair.png',
   },
   
+  
 ]
