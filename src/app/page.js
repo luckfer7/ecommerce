@@ -1,6 +1,7 @@
 import Bestselling from "@/components/BestSelling";
 import Categories from "@/components/Categories";
 import FlashSales from "@/components/FlashSales";
+import Footer from "@/components/Footer";
 import Garanty from "@/components/Garanty-section";
 import Header from "@/components/Header";
 import HomePage from "@/components/HomePage";
@@ -23,6 +24,7 @@ export default function Home() {
       <OurProducts />
       <NewArrival />
       <Garanty />
+      <Footer />
     </div>
   );
 }
