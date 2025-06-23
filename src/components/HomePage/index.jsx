@@ -20,7 +20,7 @@ export default function HomePage() {
         <main className="flex " >
            <aside className=" w-1/3 border-r-1 border-gray-200 flex justify-center" >
             <ul className="flex flex-col gap-4 py-6" >
-                <li> <Link href="/"  >Woman's Fashion</Link> </li>
+                <li> <Link href="/womansfashion"  >Woman's Fashion</Link> </li>
                 <li> <Link href="/" >Men's Fashion</Link> </li>
                 <li> <Link href="/" >Electronics</Link> </li>
                 <li> <Link href="/" >Home & Lifestyle</Link> </li>
