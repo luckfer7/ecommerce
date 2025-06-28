@@ -9,6 +9,13 @@ import sellericon from "../../../public/seller-icon.png"
 import IconSale from "../../../public/Icon-Sale.png"
 import IconShopping from "../../../public/Icon-Shopping bag.png"
 import Group from "../../../public/Group.png"
+import TomCruise from "../../../public/tom cruise.png";
+import EmmaWatson from "../../../public/emma watsom.png";
+import WillSmith from "../../../public/will smith.png";
+import Link from "next/link";
+import twitterIcon from "../../../public/twitter-icon.png";
+import instagramIcon from "../../../public/instagram-icon.png";
+import linkedinIcon from "../../../public/linkedin-icon.png";
 
 
 export default function AboutPage() {
@@ -16,7 +23,7 @@ export default function AboutPage() {
         <div>
             <TopHeader />
             <Header />
-            <main className=" flex flex-col gap-40" >
+            <main className=" flex flex-col gap-40 pt-20" >
                 <section className=" flex justify-between" >
                     <div className=" flex flex-col justify-center max-w-[40%] mx-auto gap-10" >
                         <h3 className=" font-inter font-semibold text-5xl " >Our Story</h3>
@@ -90,9 +97,80 @@ export default function AboutPage() {
                         </Container>
                     </div>
                 </section>
-            </main>
+
+                <section>
+                    <div className=" flex gap-8 justify-center" >
+                        <div className=" flex flex-col gap-8" >
+                            <Container className=" bg-[#F5F5F5] " >
+                                <Image src={TomCruise} />
+                            </Container>
+
+                            <Container className=" flex flex-col gap-4 " >
+                                <h4 className=" font-inter font-medium text-3xl" >Tom Cruise</h4>
+                                <p className=" font-poppins text-[16px] " >Founder & Chairman</p>
+                                <div className=" flex gap-4 items-center " >
+                                    <Link href="/" >
+                                        <Image src={twitterIcon} /> 
+                                    </Link>
+                                    <Link href="/" >
+                                        <Image src={instagramIcon} /> 
+                                    </Link>
+                                    <Link href="/" >
+                                        <Image src={linkedinIcon} /> 
+                                    </Link>
+                                </div>
+                            </Container>
+                        </div>
+
+                        <div className=" flex flex-col gap-8" >
+                            <Container className=" bg-[#F5F5F5] " >
+                                <Image src={EmmaWatson} />
+                            </Container>
+
+                            <Container className=" flex flex-col gap-4 " >
+                                <h4 className=" font-inter font-medium text-3xl" >Emma Watson</h4>
+                                <p className=" font-poppins text-[16px] " >Managing Director</p>
+                                <div className=" flex gap-4 items-center " >
+                                    <Link href="/" >
+                                        <Image src={twitterIcon} /> 
+                                    </Link>
+                                    <Link href="/" >
+                                        <Image src={instagramIcon} /> 
+                                    </Link>
+                                    <Link href="/" >
+                                        <Image src={linkedinIcon} /> 
+                                    </Link>
+                                </div>
+                            </Container>
+                        </div>
+
+                        <div className=" flex flex-col gap-8" >
+                            <Container className=" bg-[#F5F5F5] " >
+                                <Image src={WillSmith} />
+                            </Container>
+
+                            <Container className=" flex flex-col gap-4 " >
+                                <h4 className=" font-inter font-medium text-3xl" >Will Smith</h4>
+                                <p className=" font-poppins text-[16px] " >Product Designer</p>
+                                <div className=" flex gap-4 items-center " >
+                                    <Link href="/" >
+                                        <Image src={twitterIcon} /> 
+                                    </Link>
+                                    <Link href="/" >
+                                        <Image src={instagramIcon} /> 
+                                    </Link>
+                                    <Link href="/" >
+                                        <Image src={linkedinIcon} /> 
+                                    </Link>
+                                </div>
+                            </Container>
+                        </div>   
+                    </div>
+                </section>
             <Garanty />
             <Footer />
+            </main>
+            
         </div>
     )
 }
