@@ -1,3 +1,4 @@
+"use client"
 import Container from "@/components/Container";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -6,8 +7,50 @@ import Image from "next/image";
 import loginImageScreen from "../../../public/login-screen-image.png"
 import Button from "@/components/Button";
 import Link from "next/link";
+import React, { useState } from "react";
 
 export default function signUpPage() {
+
+    const [formData, setFormData] = useState({
+        nome: "",
+        email: "",
+        senha: ""
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch("https://localhost:7098/auth/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (!response.ok) {
+                const error = await response.json();
+                alert("Erro: " + error.message);
+                return;
+            }
+
+            const data = await response.json();
+            console.log("Resposta do backend:", data);
+            alert("Usuário cadastrado com sucesso!");
+
+        } catch (error) {
+            alert("Erro: " + error.message);
+        }
+    };
+
     return(
         <div>
             <TopHeader />
@@ -24,13 +67,13 @@ export default function signUpPage() {
                         </div>
 
                         <div>
-                            <form className="flex flex-col gap-8"  action="">
-                                <input className=" border-b py-1 px-1" placeholder="Name" type="text" />
-                                <input className=" border-b py-1 px-1" placeholder="Email or Phone Number" type="text" />
-                                <input className=" border-b py-1 px-1" placeholder="Password" type="" />
+                            <form className="flex flex-col gap-8" onSubmit={handleChange} action="">
+                                <input name="nome" value={formData.nome} onChange={handleChange} className=" border-b py-1 px-1" placeholder="Name" type="text" />
+                                <input name="email" value={formData.email} onChange={handleChange} className=" border-b py-1 px-1" placeholder="Email or Phone Number" type="email" />
+                                <input name="senha" value={formData.senha} onChange={handleChange} className=" border-b py-1 px-1" placeholder="Password" type="password" />
 
                                 <Container className="flex flex-col gap-4" >
-                                    <Button className=" py-4 px-30 bg-[#DB4444] text-[#FAFAFA] text-[16px] font-poppins font-medium cursor-pointer" >Create Account</Button>
+                                    <Button type="submit" onClick={handleSubmit} className=" py-4 px-30 bg-[#DB4444] text-[#FAFAFA] text-[16px] font-poppins font-medium cursor-pointer" >Create Account</Button>
                                     <Button className=" py-4 px-30 bg-[#FFFFFF] text-[#000000] text-[16px] font-poppins font-medium cursor-pointer border" >Sign up with Google</Button>
                                 </Container>
                             </form>
