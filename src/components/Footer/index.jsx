@@ -49,10 +49,10 @@ export default function Footer() {
                     <span className=" font-Poppins text-[16px] text-[#FAFAFA]" >Save $3 with App New User Only</span>
                     <Container className=" flex flex-col gap-2 " >
                         <Link href="/" >
-                            <Image src={googlePlay} />
+                            <Image src={googlePlay} alt="icone do google play"/>
                         </Link>
                         <Link href="/" >
-                            <Image  src={AppStore} />
+                            <Image  src={AppStore} alt="icone da apple store"/>
                         </Link>
                     </Container>
                     <Container className=" flex justify-between" >
