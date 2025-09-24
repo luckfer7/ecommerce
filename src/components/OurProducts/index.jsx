@@ -8,6 +8,7 @@ import { Button } from "../ui/button";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import AddToCart from "../AddToCartButton";
 
 export default function OurProducts() {
     // return(
@@ -119,6 +120,10 @@ function ProductCard({ product }) {
             </div>
           
         </CardContent>
+
+        <div >
+            <AddToCart />
+        </div>
       </Card>
       <p className="font-poppins text-[12px] text-black font-medium">{product.name}</p>
       <span className="font-poppins text-[12px] text-[#DB4444]">${product.price}</span>
