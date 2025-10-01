@@ -51,7 +51,7 @@ export default function Header() {
                         </Link>                       
                     </Container>
                     <Container>
-                        <Link href="/" >
+                        <Link href="/cart" >
                             <Image src={CartIcon} alt="icone de carrinho" />
                         </Link>
                     </Container>
